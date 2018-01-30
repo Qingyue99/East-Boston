@@ -25,7 +25,7 @@ $(document).ready(function() {
     });
     var description = [{
         'name':'Eagle Hill',
-        'description': 'population 1'
+        'description': '#2 Number of Retail Shop: 26 '+'<br/>'+'#5 Number of Street Light: 79'+'<br/>'+' #3 Average Number of Years Since Building been Remodel: 36'
     }, {
         'name':'Eagle Hill2',
         'description': 'population 2'

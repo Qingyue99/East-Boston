@@ -1,0 +1,65 @@
+
+
+.x-large {
+    font-size: 36px;
+    font-family:BentonSans;
+    font-weight: 200;
+    font-style: normal;
+    color: #FFFFFF;
+}
+.medium {
+    font-size:24px;
+    font-family:sans-serif;
+    color: #FFFFFF;
+
+}
+.small {
+    font-size:14px;
+    font-family:sans-serif;
+    color: #FFFFFF;
+}
+
+.orangeSpan{
+    color:#F38181;
+    font-size:28px;
+}
+
+
+.SmallSpan{
+    color:#F38181;
+    font-size:14px;
+    opacity:0.6;
+
+}
+
+
+#fp-nav.right{
+    right:25px;
+}
+
+
+.section {
+    /*text-align:center;*/
+    font-size: 4em;
+}
+
+
+
+#bubbletalk{
+    height: 200px;
+    display:block;
+    width:100%;
+}
+
+#Map{
+    width: 100vw;
+    height: 100vh;
+}
+
+img.bostonImg{
+    width: 100%;
+}
+
+.retail{
+    color: #1e7e34;
+}

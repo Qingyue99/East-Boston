@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee7b31a2-fbc6-4a34-b20e-f6c5233eb264" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/East-Boston-Master-Plan_after.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/EastBoston_logo_final.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
@@ -22,16 +18,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="338">
+              <caret line="45" column="109" lean-forward="true" selection-start-line="45" selection-start-column="109" selection-end-line="45" selection-end-column="109" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1517432216000" expanded="true" signature="1769:1775" ph="©" />
-                <marker date="1517432216000" expanded="true" signature="2026:2032" ph="©" />
+                <marker date="1517512806000" expanded="true" signature="1373:1379" ph="©" />
+                <marker date="1517512806000" expanded="true" signature="1630:1636" ph="©" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eb_neighborhood.geojson" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eb_neighborhood.geojson">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="99" lean-forward="false" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="99" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,18 +45,18 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="1189">
               <caret line="248" column="19" lean-forward="true" selection-start-line="248" selection-start-column="19" selection-end-line="248" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="92" column="185" lean-forward="false" selection-start-line="92" selection-start-column="185" selection-end-line="92" selection-end-column="185" />
+            <state relative-caret-position="-264">
+              <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#a#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#a#1;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -75,6 +81,7 @@
       <find>2de</find>
       <find>br</find>
       <find>h6</find>
+      <find>Neigh</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,8 +90,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/index.css" />
+        <option value="$PROJECT_DIR$/eb_neighborhood.geojson" />
+        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -96,8 +104,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-96" />
-    <option name="y" value="240" />
+    <option name="x" value="-83" />
+    <option name="y" value="104" />
     <option name="width" value="1536" />
     <option name="height" value="767" />
   </component>
@@ -130,6 +138,11 @@
             <path>
               <item name="EastBoston" type="b2602c69:ProjectViewProjectNode" />
               <item name="EastBoston" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EastBoston" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EastBoston" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -145,6 +158,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -193,15 +207,15 @@
       <updated>1516985795947</updated>
       <workItem from="1516985797167" duration="21969000" />
       <workItem from="1517345983349" duration="3892000" />
-      <workItem from="1517429509164" duration="5471000" />
+      <workItem from="1517429509164" duration="13968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31332000" />
+    <option name="totallyTimeSpent" value="39829000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-96" y="240" width="1536" height="767" extended-state="0" />
+    <frame x="-83" y="104" width="1536" height="767" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23366337" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -247,8 +261,8 @@
           <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1517432216000" expanded="true" signature="1769:1775" ph="©" />
-            <marker date="1517432216000" expanded="true" signature="2026:2032" ph="©" />
+            <marker date="1517512806000" expanded="true" signature="1373:1379" ph="©" />
+            <marker date="1517512806000" expanded="true" signature="1630:1636" ph="©" />
           </folding>
         </state>
       </provider>
@@ -281,8 +295,8 @@
           <caret line="27" column="104" lean-forward="false" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="104" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1517432216000" expanded="true" signature="1769:1775" ph="©" />
-            <marker date="1517432216000" expanded="true" signature="2026:2032" ph="©" />
+            <marker date="1517512806000" expanded="true" signature="1373:1379" ph="©" />
+            <marker date="1517512806000" expanded="true" signature="1630:1636" ph="©" />
           </folding>
         </state>
       </provider>
@@ -328,33 +342,41 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="-264">
+          <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1517432216000" expanded="true" signature="1769:1775" ph="©" />
-            <marker date="1517432216000" expanded="true" signature="2026:2032" ph="©" />
+            <element signature="n#style#0;n#li#0;n#a#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#a#1;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eb_neighborhood.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="99" lean-forward="false" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="99" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
+        <state relative-caret-position="1189">
           <caret line="248" column="19" lean-forward="true" selection-start-line="248" selection-start-column="19" selection-end-line="248" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="92" column="185" lean-forward="false" selection-start-line="92" selection-start-column="185" selection-end-line="92" selection-end-column="185" />
+        <state relative-caret-position="338">
+          <caret line="45" column="109" lean-forward="true" selection-start-line="45" selection-start-column="109" selection-end-line="45" selection-end-column="109" />
           <folding>
-            <element signature="n#style#0;n#li#0;n#a#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#a#1;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1517512806000" expanded="true" signature="1373:1379" ph="©" />
+            <marker date="1517512806000" expanded="true" signature="1630:1636" ph="©" />
           </folding>
         </state>
       </provider>

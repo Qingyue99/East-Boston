@@ -4,52 +4,97 @@
     <meta charset="UTF-8">
     <title>EastBoston</title>
     <link rel="stylesheet" type="text/css" href="./assets/jquery.fullPage.css" />
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="normalize.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
     <link rel="stylesheet" href="./assets/bootstrap.css"/>
     <link rel="stylesheet" href="./assets/bootstrap.css.map"/>
     <link rel="stylesheet" href="index.css"/>
 
-
-    <script type="text/javascript">
-
-</script>
-
-
-
 </head>
 
 
 <body>
+<nav role="navigation" class="EastBoston_nav" >
+    <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
 
+        <!--
+        Some spans to act as a hamburger.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+            <a href="#" ><li style="font-size:4rem">East Boston</li></a>
+            <a href="#"><li style="font-size:4rem">Article 2</li></a>
+            <a href="#"><li style="font-size:4rem">Article 3</li></a>
+            <a href="#"><li style="font-size:4rem">Article 4</li></a>
+            <a href="#"><li style="font-size:4rem">Article 5</li></a>
+            <a href="#"><li style="font-size:4rem">Article 6</li></a>
+
+        </ul>
+    </div>
+</nav>
 
 
 <div id="fullpage">
-    <div class="section">
-        <div style="background-size:100% 100%; text-align:center" id="question">
-            What is the Most Liveable Neighborhood in East Boston?
-        </div>
+    <div class="section" id="section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="EastBoston_head">
+                        Is East Boston a Livable Neighborhood? And for How Long?
+                    </h1>
+                    <p class="medium">
+                        What Makes a Neighborhood Livable? Jane Jacobs argued that successful urban spaces share human scale, <span class="orangeSpan">walkability</span>, and <span class="orangeSpan">a mixture of housing</span>, <span class="orangeSpan">shops</span>, green space, and public buildings and also have sufficient building densities. <span class="SmallSpan">"- The Death and Life of Great American Cities"</span>
+                    </p>
 
+                    <p class="medium">
+                        Does East Boston fit this idea of a livable community? And what effect will the changes that are coming to this gentifying neighborhood have on livability?
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="medium">
-                        What is Livable Neighborhoods ?
-                    </p>
-                    <p class="medium">
-                        Jane Jacobs argued that successful urban neighborhoods share human scale, <span class="orangeSpan">walkability</span>, and <span class="orangeSpan">a mixture of housing</span>, <span class="orangeSpan">shops</span>, green space, and public buildings and also have sufficient building densities. <span class="SmallSpan">"- The Death and Life of Great American Cities"</span>
-                    </p>
+                    <h1>How to Define a Livable Neighborhood?</h1>
 
-                    <p class="medium">
-                        Does the diversity of street blocks make neighborhoods in East Boston have more liveable streets?
-                    </p>
+                </div>
 
-                    <p class="small">
-                        Measured by (Retail shop, Street Light, Average number of years since building been remodel)
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="claimSteps" id="partOne">
+                            <p class="medium">Building renew Frequency </p>
+                            <p class="small">reflect the level of demand of economic and environmental development</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="claimSteps" id="partTwo">
+                            <p class="medium">Young Population</p>
+                            <p class="small">Boston Area already has the higher of young population compare to average number of United States(16.8%), at 17.7%.
+                                East Boston (20.6%) even higher, have 20.6%.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="claimSteps" id="partThree">
+                            <p class="medium">Street Lighting Type and the Relationship to Space</p>
+                            <p class="small">“in the larger view, street lighting is more than just a technical requirement, a security need, or a design element.”-LIGHTING USE & DESIGN.</p>
+                        </div>
+                    </div>
+                </div>
 
-                    </p>
 
                 </div>
             </div>
@@ -58,20 +103,18 @@
 
 
 
-    </div>
-
     <div class="section">
+        <div id="test"></div>
+
         <div id="Map"></div>
 
 
-
     </div>
 
 
 
     <div class="section">
-        <div class="slide" data-anchor="slide1">
-            <div class="container">
+        <div class="container">
                     <div class="row">
                         <div class="col-12 offset-md-2">
                             <p class="x-large">
@@ -101,7 +144,7 @@
         </div>
 
 
-        <div class="slide" data-anchor="slide2">
+    <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -112,12 +155,13 @@
             </div>
 
 
-        </div>
-
     </div>
 
-    <div class="section fp-auto-height">
+
+
+    <div class="section">
         <div id="bubbletalk">Opinions</div>
+        <h6 class="EastBoston_footer"><span class="EastBoston_footer">Visualizing Eastie</span> is a project of the <a href="https://www.northeastern.edu/visualization/">Information Design and Visualization program</a> at Northeastern University. © 2018</h6>
     </div>
 </div>
 

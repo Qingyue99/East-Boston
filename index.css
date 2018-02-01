@@ -1,34 +1,268 @@
+a
+{
+    text-decoration: none;
+    color: #232323;
 
+    transition: color 0.3s ease;
+}
+
+a:hover
+{
+    color: orangered;
+}
+
+/*
+ * Black bar with logo
+ */
+
+.EastBoston_nav {
+    background-color: black;
+    height: 55px;
+    background-image: url(./images/EastBoston_logo_final.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 36px;
+    position:fixed;
+    z-index: 1000;
+    width: 100vw;
+
+}
+
+#menuToggle
+{
+    display: block;
+    position: relative;
+    top: 18px;
+    left: 20px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input
+{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #ededed;
+    opacity: 0.9;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+ul#menu li
+{
+    font-family: "GrifoL-Bold","Georgia",serif;
+    padding: 10px 0;
+    font-size: 22px;
+    border-bottom: solid 1px #999;
+}
+
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+    transform: none;
+}
+
+/* Basic text styles for The Margina
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1.EastBoston_head {
+    font-family: "GrifoL-Bold","Georgia",serif;
+    font-size: 7rem;
+    line-height: 7rem;
+    margin-top: 10%;
+    margin-bottom: 4rem;
+}
+
+h2.EastBoston_head {
+    font-family: "GrifoL-Bold","Georgia",serif;
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+    color:#666;
+    margin-top: -1rem;
+}
+
+h5.EastBoston_byline {
+    font-family: "BentonSansCond-Bold","Helvetica-Bold",sans-serif;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+div.EastBoston p {
+    font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
+    font-size: 2.8rem;
+    line-height: 3rem;
+}
+
+a   {
+    text-decoration: none;
+    border-bottom: 1px orangered solid;
+    color: #232323;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+a:visited {
+    color:black;
+}
+
+a:hover {
+    color: orangered;
+}
+
+a:active {
+    color: orangered;
+}
+
+
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h6.EastBoston_footer {
+    font-family: "GrifoL-Bold","Georgia",serif;
+    font-size: 2rem;
+    color: #666;
+    text-transform: none;
+    text-align: center;
+    letter-spacing: 0;
+    border-top: 1px solid #666;
+    padding: 20px;
+    position: absolute;
+    bottom: 10px;
+}
 
 .x-large {
     font-size: 36px;
-    font-family:BentonSans;
+    font-family:"GrifoL-Bold","Georgia",serif;
     font-weight: 200;
     font-style: normal;
     color: #FFFFFF;
 }
 .medium {
-    font-size:24px;
-    font-family:sans-serif;
-    color: #FFFFFF;
+    font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
+    font-size:30px;
+    line-height: 3rem;
+    /*font-size:24px;*/
+    /*font-family:sans-serif;*/
+    color: #393E46;
 
 }
 .small {
-    font-size:14px;
-    font-family:sans-serif;
+    font-size:24px;
+    font-family:"BentonSansCond-Regular";
     color: #FFFFFF;
 }
 
 .orangeSpan{
-    color:#F38181;
-    font-size:28px;
+    color:#3F72AF;
+    font-size:30px;
+    font-family:"BentonSansCond-Bold";
 }
 
 
 .SmallSpan{
-    color:#F38181;
-    font-size:14px;
-    opacity:0.6;
+    color:#3F72AF;
+    font-size:30px;
+    font-family:"BentonSansCond-Regular";
+
 
 }
 
@@ -54,6 +288,7 @@
 #Map{
     width: 100vw;
     height: 100vh;
+    z-index:0;
 }
 
 img.bostonImg{
@@ -62,4 +297,30 @@ img.bostonImg{
 
 .retail{
     color: #1e7e34;
+}
+
+div#section1{
+    background-image: url("./images/East-Boston-Master-Plan_after.jpg");
+    background-color: rgba(255,255,255,0.5);
+    background-size: cover;
+}
+
+div#test {
+    position: absolute;
+    z-index:100;
+    top: 0px;
+    left: 50px;
+    width: 200px;
+    height:200px;
+    background-color:red;
+}
+.claimSteps {
+    width: 285px;
+    height: 285px;
+    background-color: #2dccd3;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    display: table;
 }

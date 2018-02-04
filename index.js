@@ -28,13 +28,26 @@ $(document).ready(function() {
         'color':'red',
         'description': '#2 Number of Retail Shop: 26 '+'<br/>'+'#5 Number of Street Light: 79'+'<br/>'+' #3 Average Number of Years Since Building been Remodel: 36'
     }, {
-        'name':'Eagle Hill2',
+        'name':'Lower Eagle Hill',
         'description': 'population 2'
+    }, {
+        'name':'Jeffries Point',
+        'description': 'population 3'
+    },{
+        'name':'Orient Heights',
+        'description': 'population 4'
+    },{
+            'name':'Lower Orient Heights',
+            'description': 'population 5'
+        },{
+        'name':'Logan',
+        'description': 'population 6'
     }];
     var map = L.map('Map',{
-        scrollWheelZoom: false
-    }).setView([42.3731185,-71.0314839], 15);
-
+        scrollWheelZoom: false,
+        zoomSnap: 0.2
+    });
+    map.fitBounds([[42.401203, -71.048002],[42.347432, -70.987063]]);
 
 
 
@@ -60,18 +73,59 @@ $(document).ready(function() {
                     }
                 }
                 text += "<br>" +  feature.properties["Neighbor"];
-console.log(text);
+                console.log(text);
                 layer.bindPopup(text);
                 layer.setStyle({
-                    fillColor: "red"
-                })
+                    fillColor: colorNeiborhood(feature.properties["Neighbor"]),
+                });
+
             }
         }).addTo(map);
+
+    var lightOptions = {
+        onEachFeature: function(feature, layer) {
+        },
+        style: function(feature) {
+            return {
+                opacity: 1,
+                fillOpacity: 0,
+                radius: 1,
+                color: 'red'
+            }
+        },
+        pointToLayer: function(feature, latlng) {
+            return L.circleMarker(latlng, {
+
+            });
+        }
+    };
+
+    var retailLayer = L.layerGroup();
+    retailLayer.addTo(map);
+    d3.csv('./assets/Retail.csv', function (err, data) {
+        console.log(data);
+        data.forEach(function (obj) {
+                var circle = L.circle([+obj.lat, +obj.lon], {
+                    color: 'steelblue'
+                });
+                retailLayer.addLayer(circle);
+        });
+    });
+
+    L.shapefile('./assets/EH.zip', lightOptions).addTo(map);
 
     // geojsonLayer.eachLayer(function(layer) {
     //     layer.setStyle({
     //         fillColor: "red"
     //     });
+    function colorNeiborhood(str) {
+        if(str=='Eagle Hill'){
+            return 'red'
+        } else if(str=='Jeffries Point'){
+            return 'blue'
+        }
+        return 'gold';
+    }
 
 
 

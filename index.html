@@ -7,15 +7,21 @@
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <!--<link rel="stylesheet" href="normalize.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
-    <link rel="stylesheet" href="./assets/bootstrap.css"/>
-    <link rel="stylesheet" href="./assets/bootstrap.css.map"/>
+    <!--<link rel="stylesheet" href="./assets/bootstrap.css"/>-->
+    <!--<link rel="stylesheet" href="./assets/bootstrap.css.map"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./assets/jquery.easings.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
     <script type="text/javascript" src="./assets/jquery.fullPage.js"></script>
-    <script src="index.js"></script>
     <script src="./assets/leaflet.ajax.js"></script>
+    <script src="./assets/shp.js"></script>
+    <script src="./assets/leaflet.shpfile.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <!--<script src="./assets/mapSetup.js"></script>-->
+    <script src="index.js"></script>
+
 
 </head>
 
@@ -53,12 +59,12 @@
     <div class="section" id="section1">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 bgWhite">
                     <h1 class="EastBoston_head">
                         Is East Boston a Livable Neighborhood? And for How Long?
                     </h1>
                     <p class="medium">
-                        What Makes a Neighborhood Livable? Jane Jacobs argued that successful urban spaces share human scale, <span class="orangeSpan">walkability</span>, and <span class="orangeSpan">a mixture of housing</span>, <span class="orangeSpan">shops</span>, green space, and public buildings and also have sufficient building densities. <span class="SmallSpan">"- The Death and Life of Great American Cities"</span>
+                        What Makes a Neighborhood Livable? Jane Jacobs argued that successful urban spaces share human scale, <span class="orangeSpan">walkability</span>, and <span class="orangeSpan">a mixture of housing</span>, <span class="orangeSpan">shops</span>, <span class="orangeSpan">green space</span>, and <span class="orangeSpan">public buildings</span> and also have <span class="orangeSpan">sufficient building densities</span> <span class="SmallSpan">"- The Death and Life of Great American Cities"</span>
                     </p>
 
                     <p class="medium">
@@ -71,35 +77,71 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="section2">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>How to Define a Livable Neighborhood?</h1>
-
+                    <h1 class="inner-title">How to Define a Livable Neighborhood?</h1>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="claimSteps" id="partOne">
-                            <p class="medium">Building renew Frequency </p>
-                            <p class="small">reflect the level of demand of economic and environmental development</p>
+                    <div class="col-md-4 col-12">
+                        <p class="medium center-text"> BUILDING</p>
+                        <div class="bg-shape">
+                            <p class="medium">Building Renewal Frequency </p>
+                            <p class="small">The average number of years since building has been remodel reflect the level of demand of economic and environmental development<br/>
+                                <a href="" target="_blank" class="more-link">MORE</a>
+                            </p>
+
+
                         </div>
+                        <div class="bg-shape">
+                            <p class="medium">Building Density </p>
+                            <p class="small">Building density can reflect the bustling degree of an area</p>
+                        </div>
+
                     </div>
-                    <div class="col-md-4">
+
+                    <div class="col-md-4 col-12">
+                        <p class="medium center-text"> POPULATION</p>
+                        <div class="bg-shape">
                         <div class="claimSteps" id="partTwo">
-                            <p class="medium">Young Population</p>
-                            <p class="small">Boston Area already has the higher of young population compare to average number of United States(16.8%), at 17.7%.
-                                East Boston (20.6%) even higher, have 20.6%.</p>
+                            <p class="medium">Young Professional Population</p>
+                            <div class="small pop-icon">
+                                👤<br/>
+                                20s(from 22 to 29 years old, to not overlap the college category)
+
+                            </div>
+                            <div class="small pop-icon">
+                                🎓<br/>
+                                College (from 18 to 21 years old)
+                            </div>
+
+                            <p class="small blockp">
+                                Average number of United States(16.8%)<br/>
+                                Boston Area at (17.7%)<br/>
+                                East Boston (20.6%)<br/>
+                            </p>
+                            <p class="small">Young professional population can reflect job-heavy economic powerhouses of one area.
+                                <a href="" target="_blank" class="more-link">MORE</a>
+                            </p>
+                        </div>
+                     </div>
+                        <div class="bg-shape">
+                            <p class="medium center-text">Total Population</p>
+                            <p class="small">The total population reflects the attraction of this area</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+
+                    <div class="col-md-4 col-12">
+                        <p class="medium center-text"> MUNICIPAL FACILITIES</p>
+                        <div class="bg-shape">
                         <div class="claimSteps" id="partThree">
                             <p class="medium">Street Lighting Type and the Relationship to Space</p>
-                            <p class="small">“in the larger view, street lighting is more than just a technical requirement, a security need, or a design element.”-LIGHTING USE & DESIGN.</p>
+                            <p class="small">“in the larger view, street lighting is more than just a technical requirement, a security need, or a design element.”-Lighting use & design
+                                <a href="https://www.pps.org/article/streetlights" target="_blank" class="more-link">MORE</a>
+                            </p>
                         </div>
                     </div>
-                </div>
 
 
                 </div>
@@ -109,7 +151,7 @@
 
 
 
-    <div class="section">
+    <div class="section" id="section3">
         <div id="test"></div>
 
         <div id="Map"></div>
@@ -119,7 +161,7 @@
 
 
 
-    <div class="section">
+    <div class="section" id="section4">
         <div class="container">
                     <div class="row">
                         <div class="col-12 offset-md-2">

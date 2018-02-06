@@ -5,7 +5,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         //Navigation
-        anchors:['firstPage', 'secondPage'],
+        anchors:['firstPage', 'secondPage','thirdPage','fourthPage'],
         navigation: true,
         navigationPosition: 'right',
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
         'description': '#2 Number of Retail Shop: 26 '+'<br/>'+'#5 Number of Street Light: 79'+'<br/>'+' #3 Average Number of Years Since Building been Remodel: 36'
     }, {
         'name':'Lower Eagle Hill',
-        'description': 'population 2'
+        'description': '#3 Number of Retail Shop: 26 '+'<br/>'+'#5 Number of Street Light: 86'+ '<br/>'+' #3 Average Number of Years Since Building been Remodel: 36'
     }, {
         'name':'Jeffries Point',
         'description': 'population 3'
@@ -87,10 +87,10 @@ $(document).ready(function() {
         },
         style: function(feature) {
             return {
-                opacity: 1,
-                fillOpacity: 0,
-                radius: 1,
-                color: 'red'
+                opacity: 0.8,
+                fillOpacity:0.6,
+                radius:0.05,
+                color: '#DE561C'
             }
         },
         pointToLayer: function(feature, latlng) {
@@ -106,40 +106,84 @@ $(document).ready(function() {
         console.log(data);
         data.forEach(function (obj) {
                 var circle = L.circle([+obj.lat, +obj.lon], {
-                    color: 'steelblue'
+                    color: '#3090A1'
                 });
                 retailLayer.addLayer(circle);
         });
     });
 
     L.shapefile('./assets/EH.zip', lightOptions).addTo(map);
+    L.shapefile('./assets/Logan.zip', lightOptions).addTo(map);
+    L.shapefile('./assets/JP.zip', lightOptions).addTo(map);
+    L.shapefile('./assets/LEH.zip', lightOptions).addTo(map);
 
-    // geojsonLayer.eachLayer(function(layer) {
-    //     layer.setStyle({
-    //         fillColor: "red"
-    //     });
+
+
     function colorNeiborhood(str) {
-        if(str=='Eagle Hill'){
-            return 'red'
-        } else if(str=='Jeffries Point'){
-            return 'blue'
+        if (str == 'Eagle Hill') {
+            return '#ECFEFF'
+        } else if (str == 'Jeffries Point') {
+            return '#C1C0B9'
         }
-        return 'gold';
+        else if (str == 'Lower Eagle Hill') {
+            return '#537791'
+        }
+        else if (str == 'Orient Heights') {
+            return '#FFCDCD'
+        }
+        else if (str == 'Lower Orient Heights') {
+            return '#8785A2'
+        }
+        else if (str == 'Lower Orient Heights') {
+            return '#A6DFDE'
+        }
+    }
+
+
+    //Pie chart
+
+    var pieChart = d3.select('#piechart')
+        .append('svg')
+        .attr('width','500px')
+        .attr('height','500px')
+        .append('g')
+        .attr('transform','translate(100,100)');
+
+    console.log(pieChart);
+
+    //import data here
+    d3.csv('./assets/piedata.csv', parse, function(d) {
+
+        var pie = d3.pie().value(function (d) {
+            return d.per
+        });
+
+        var arc = d3.arc()
+            .innerRadius(0)
+            .outerRadius(50);
+
+        var arcs = pie(d)
+
+        pieChart.selectAll('path')
+            .data(arcs)
+            .enter()
+            .append('path')
+            .attr('d',arc)
+            .style('fill','black')
+            .style('stroke-width','2px')
+            .style('stroke','white');
+
+    });//import data and draw pie
+
+
+    function parse(d) {
+        return{
+            factor: d['factor'],
+            per: +d['percent']
+        }
     }
 
 
 
-// console.log(geojsonLayer);
-//     geojsonLayer.addTo(map).bindPopup(function (layer) {
-//             for(var i=0; i<description.length; i++){
-//                 if(description[i].name == layer.feature.properties.name){
-//                     return layer.feature.properties.name + '<br/>' +description[i].description
-//                 }
-//             }
-//             return layer.feature.properties.name;
-//         });
-//
-//
-});
+}); // Draw map
 
-//

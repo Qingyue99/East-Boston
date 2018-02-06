@@ -20,8 +20,8 @@
       <file leaf-file-name="Boston.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Boston.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+            <state relative-caret-position="97">
+              <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -67,6 +67,7 @@
       <find>red</find>
       <find>section 1</find>
       <find>test</find>
+      <find>jquery</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,7 +97,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="232" />
-    <option name="y" value="82" />
+    <option name="y" value="81" />
     <option name="width" value="1429" />
     <option name="height" value="702" />
   </component>
@@ -125,6 +126,17 @@
             <path>
               <item name="East-Boston" type="b2602c69:ProjectViewProjectNode" />
               <item name="East-Boston" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="East-Boston" type="b2602c69:ProjectViewProjectNode" />
+              <item name="East-Boston" type="462c0819:PsiDirectoryNode" />
+              <item name="EastBoston" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="East-Boston" type="b2602c69:ProjectViewProjectNode" />
+              <item name="East-Boston" type="462c0819:PsiDirectoryNode" />
+              <item name="EastBoston" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,15 +205,15 @@
       <workItem from="1517694461981" duration="25768000" />
       <workItem from="1517949872101" duration="122000" />
       <workItem from="1517950438694" duration="39000" />
-      <workItem from="1517950527444" duration="305000" />
+      <workItem from="1517950527444" duration="526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66250000" />
+    <option name="totallyTimeSpent" value="66471000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="232" y="82" width="1429" height="702" extended-state="0" />
+    <frame x="232" y="81" width="1429" height="702" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25142047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -278,8 +290,8 @@
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/Boston.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="97">
+          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
           <folding />
         </state>
       </provider>

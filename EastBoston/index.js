@@ -5,7 +5,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         //Navigation
-        anchors:['firstPage', 'secondPage','thirdPage','fourthPage'],
+        anchors:['firstPage', 'secondPage','thirdPage','fourthPage','lastPage','lastPage1','lastPage2'],
         navigation: true,
         navigationPosition: 'right',
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
-    var geojsonLayer = new L.GeoJSON.AJAX("eb_neighborhood.geojson",
+    var geojsonLayer = new L.GeoJSON.AJAX("./EastBoston/eb_neighborhood.geojson",
         {
             onEachFeature: function (feature, layer) {
                 var text = "";
@@ -102,7 +102,7 @@ $(document).ready(function() {
 
     var retailLayer = L.layerGroup();
     retailLayer.addTo(map);
-    d3.csv('./assets/Retail.csv', function (err, data) {
+    d3.csv('EastBoston/assets/Retail.csv', function (err, data) {
         console.log(data);
         data.forEach(function (obj) {
                 var circle = L.circle([+obj.lat, +obj.lon], {
@@ -112,10 +112,10 @@ $(document).ready(function() {
         });
     });
 
-    L.shapefile('./assets/EH.zip', lightOptions).addTo(map);
-    L.shapefile('./assets/Logan.zip', lightOptions).addTo(map);
-    L.shapefile('./assets/JP.zip', lightOptions).addTo(map);
-    L.shapefile('./assets/LEH.zip', lightOptions).addTo(map);
+    L.shapefile('EastBoston/assets/EH.zip', lightOptions).addTo(map);
+    L.shapefile('EastBoston/assets/Logan.zip', lightOptions).addTo(map);
+    L.shapefile('EastBoston/assets/JP.zip', lightOptions).addTo(map);
+    L.shapefile('EastBoston/assets/LEH.zip', lightOptions).addTo(map);
 
 
 
@@ -140,48 +140,68 @@ $(document).ready(function() {
     }
 
 
-    //Pie chart
+    //barChart
+    var barWidth = document.getElementById('barChart').clientWidth,
+        barHeight = document.getElementById('barChart').clientHeight;
 
-    var pieChart = d3.select('#piechart')
+    var barChart = d3.select('#barChart')
         .append('svg')
-        .attr('width','500px')
-        .attr('height','500px')
+        .attr('class', 'barsvg')
+        .attr('width',barWidth)
+        .attr('height',barHeight)
         .append('g')
-        .attr('transform','translate(100,100)');
+        .attr('class', 'barG')
+        .attr('transform','translate(10,10)');
 
-    console.log(pieChart);
+    console.log(barChart);
 
     //import data here
-    d3.csv('./assets/piedata.csv', parse, function(d) {
+    d3.csv('EastBoston/assets/piedata.csv', function(data) {
+        console.log(data);
 
-        var pie = d3.pie().value(function (d) {
-            return d.per
+        var max = d3.max(data, function (d) {
+            return d.percent;
         });
+        var barH = 30;
+        var barS = 30;
 
-        var arc = d3.arc()
-            .innerRadius(0)
-            .outerRadius(50);
+        var scaleX = d3.scaleLinear()
+            .domain([0, max])
+            .range([0, barHeight]);
 
-        var arcs = pie(d)
-
-        pieChart.selectAll('path')
-            .data(arcs)
+        d3.select('.barG')
+            .selectAll("rect")
+            .data(data)
             .enter()
-            .append('path')
-            .attr('d',arc)
-            .style('fill','black')
-            .style('stroke-width','2px')
-            .style('stroke','white');
+            .append("rect")
+            .attr("class", "bar")
+            .attr("width", 0)
+            .attr("x", 0)
+            .attr("y", function (d, i) { return (barH + barS)*i+30; })
+            .attr("height", barH)
+            .transition()
+            .delay(function (d, i) { return i*200; })
+            .attr("width", function (d) {
+                return scaleX(d.percent);
+            })
+
+        d3.select('.barG')
+            .selectAll('.label')
+            .data(data)
+            .enter()
+            .append('text')
+            .attr('class', 'label')
+            .text(function (d) {
+                return d.factor +' '+ d.percent;
+            })
+            .attr("x", 5)
+            .attr("y", function (d, i) { return (barH + barS)*i+20; })
+            .attr("dy", ".35em")
+
+
+
 
     });//import data and draw pie
-
-
-    function parse(d) {
-        return{
-            factor: d['factor'],
-            per: +d['percent']
-        }
-    }
 
 
 

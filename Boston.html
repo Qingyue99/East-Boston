@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>EastBoston</title>
-    <link rel="stylesheet" type="text/css" href="./assets/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="EastBoston/assets/jquery.fullPage.css" />
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <!--<link rel="stylesheet" href="normalize.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
     <!--<link rel="stylesheet" href="./assets/bootstrap.css"/>-->
     <!--<link rel="stylesheet" href="./assets/bootstrap.css.map"/>-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="EastBoston/index.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./assets/jquery.easings.min.js"></script>
+    <script src="EastBoston/assets/jquery.easings.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
-    <script type="text/javascript" src="./assets/jquery.fullPage.js"></script>
-    <script src="./assets/leaflet.ajax.js"></script>
-    <script src="./assets/shp.js"></script>
-    <script src="./assets/leaflet.shpfile.js"></script>
+    <script type="text/javascript" src="EastBoston/assets/jquery.fullPage.js"></script>
+    <script src="EastBoston/assets/leaflet.ajax.js"></script>
+    <script src="EastBoston/assets/shp.js"></script>
+    <script src="EastBoston/assets/leaflet.shpfile.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
     <!--<script src="./assets/mapSetup.js"></script>-->
-    <script src="index.js"></script>
+    <script src="EastBoston/index.js"></script>
 
 
 </head>
@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-12 bgWhite">
                     <h1 class="EastBoston_head">
-                        Is East Boston a Livable Neighborhood? And for How Long?
+                        In the future, will East Boston still be livable?
                     </h1>
                     <p class="medium">
                         What Makes a Neighborhood Livable? Jane Jacobs argued that successful urban spaces share human scale, <span class="orangeSpan">walkability</span>, and <span class="orangeSpan">a mixture of housing</span>, <span class="orangeSpan">shops</span>, <span class="orangeSpan">green space</span>, and <span class="orangeSpan">public buildings</span> and also have <span class="orangeSpan">sufficient building densities</span> <span class="SmallSpan">"- The Death and Life of Great American Cities"</span>
@@ -81,19 +81,19 @@
     <div class="section" id="section1-1">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="inner-title2">In Imagine Boston 2030 Draft Plan, city planners points out different neighborhoods will need different
-                        investments to thrive.</h1>
+                <div class="col-md-4 offset-md-2 col-12">
+                    <h1 class="inner-title3">
+                        When asked, "What would you add or change to make your neighborhood an even better place to live?"
+                        Boston residents replied:
+                    </h1>
                 </div>
 
                 <div class="col-md-4 col-12">
-                <div id="piechart">
-                </div>
-
-
-                    <p class="small blockp">
-                        When asked, "What would you add or change to make your neighborhood an even better place to live?"
-                        Boston residents replied:
+                    <div id="barChart">
+                    </div>
+                    <p class="medium">
+                        In Imagine Boston 2030 Draft Plan, city planners points out different neighborhoods will need different
+                        investments to thrive.
                     </p>
                 </div>
             </div>
@@ -106,11 +106,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="inner-title">How to Define a Livable Neighborhood?</h1>
+                    <h1 class="inner-title">How well does East Boston compare to people expectation of Livable Neighborhood?</h1>
                 </div>
 
                     <div class="col-md-4 col-12">
-                        <p class="medium center-text"> BUILDING</p>
+                        <p class="medium center-text">Walkable City</p>
                         <div class="bg-shape">
                             <p class="medium">Building Renewal Frequency </p>
                             <p class="small">The average number of years since building has been remodel reflect the level of demand of economic and environmental development<br/>
@@ -127,10 +127,10 @@
                     </div>
 
                     <div class="col-md-4 col-12">
-                        <p class="medium center-text"> POPULATION</p>
+                        <p class="medium center-text">Affordable City</p>
                         <div class="bg-shape">
                         <div class="claimSteps" id="partTwo">
-                            <p class="medium">Young Professional Population</p>
+                            <p class="medium">Affordable Housing</p>
                             <div class="small pop-icon">
                                 👤<br/>
                                 20s(from 22 to 29 years old, to not overlap the college category)
@@ -158,13 +158,18 @@
                     </div>
 
                     <div class="col-md-4 col-12">
-                        <p class="medium center-text"> MUNICIPAL FACILITIES</p>
+                        <p class="medium center-text">Safety City</p>
                         <div class="bg-shape">
                         <div class="claimSteps" id="partThree">
-                            <p class="medium">Street Lighting Type and the Relationship to Space</p>
+                            <p class="medium"> Infrastructure: Street Lighting Type and the Relationship to Space</p>
                             <p class="small">“in the larger view, street lighting is more than just a technical requirement, a security need, or a design element.”-Lighting use & design
                                 <a href="https://www.pps.org/article/streetlights" target="_blank" class="more-link">MORE</a>
                             </p>
+                        </div>
+                    </div>
+                        <div class="bg-shape">
+                            <p class="medium center-text">Diversity of population</p>
+                            <p class="small">The total population reflects the attraction of this area</p>
                         </div>
                     </div>
 
@@ -177,18 +182,28 @@
 
 
     <div class="section" id="section3">
-        <section id="info">
-            <h5 class= "EastBoston_byline">
-                "The Built Environment"</br>
+        <div id="info">
+            <h5 class= "EastBoston_byline leafletTitle">
+                How to Read "The Built Environment"</br>
             </h5>
             <div id="infoPanel">
                 <p class="small">social and economic interactions take place in environments</p>
             </div>
 
-        </section>
-        <div id="legend">
-            <p class="small">How to Read</p>
+            <div class="icons">
+                <span><img class="leaflet-icon" src="./EastBoston/assets/real-estate.svg"/></span> Real Estate
+            </div>
+
+            <div class="icons">
+                <span><img class="leaflet-icon" src="./EastBoston/assets/shop.svg"/></span> Shop
+            </div>
+
+            <div class="icons">
+                <span><img class="leaflet-icon" src="./EastBoston/assets/street-light.svg"/></span> Street-Light
+            </div>
+
         </div>
+
 
         <div id="Map"></div>
 
@@ -208,7 +223,7 @@
                     </div>
                     <div class="row">
                         <div class="col-8 offset-md-2">
-                            <img src="./assets/2drawingJP.jpg" class="bostonImg" id="zoomin" >
+                            <img src="EastBoston/assets/2drawingJP.jpg" class="bostonImg" id="zoomin" >
                         </div>
                     </div>
                     <div class="row">
@@ -232,7 +247,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <img src="./assets/Streetview.png" class="bostonImg" id="zoomin2">
+                        <img src="EastBoston/assets/Streetview.png" class="bostonImg" id="zoomin2">
                     </div>
 
                 </div>

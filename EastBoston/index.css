@@ -299,31 +299,24 @@ div#infoPanel{
     display: block;
 }
 
-div#legend {
-    position: absolute;
-    z-index:100;
-    bottom: 20px;
-    right: 20px;
-    width: 120px;
-    padding:8px 2px 2px 8px;
-    height:200px;
-    background-color:#a6b5bd;
-    border: 1px solid #cdcdcd;
-}
 
 
 div#info{
     position: absolute;
     z-index:100;
-    Top: 20px;
+    Top: 150px;
     left: 20px;
-    width: 150px;
+    width: 250px;
     padding:8px 2px 2px 8px;
-    height:300px;
+    height:450px;
     background-color:#a6b5bd;
     border: 1px solid #cdcdcd;
 }
-
+div.EastBoston_byline.leafletTitle{
+    width:100%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
 
 .claimSteps {
     width: 285px;
@@ -356,6 +349,14 @@ div#info{
     padding-bottom: 20px;
 }
 
+.inner-title3{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family:"BentonSansCond-Bold";
+}
+
 .center-text{
     text-align:center;
 }
@@ -377,10 +378,23 @@ div#info{
     margin-top: 70px;
 }
 
-#piechart{
-    width: 50vw;
-    height: 50vh;
+#barChart{
+    width: 100%;
+    min-height: 300px;
     z-index:0;
-.slice text:
-    font-family: Droid Sans;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+}
+.label{
+    font-family: "BentonSansCond-Bold", "Helvetica-Bold", sans-serif;
+    font-size: 12px;
+}
+.icons{
+    margin-top:10px;
+    font-size: 1rem;
+}
+.leaflet-icon{
+    width: 40px;
+    height: 40px;
 }

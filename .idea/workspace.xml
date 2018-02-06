@@ -2,7 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee7b31a2-fbc6-4a34-b20e-f6c5233eb264" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Boston.html" afterPath="$PROJECT_DIR$/Boston.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/2detail-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/2drawingJP.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/EH.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/Eastboston_0130-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/JP.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/LEH.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/Logan.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/Retail.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/Streetview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/catiline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/frombook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/jquery.easings.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/jquery.fullPage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/jquery.fullPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/leaflet.ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/leaflet.shpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/mapSetup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/piedata.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/ramen card.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/real-estate.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/shop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/shp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/assets/street-light.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/eb_neighborhood.geojson" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/fullPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/images/East-Boston-Master-Plan_after.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/images/East-Boston-Master-Plan_afterBW.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/images/EastBoston_logo_final.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/images/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/jquery.fullPage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/population.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EastBoston/test.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -125,11 +162,6 @@
               <item name="East-Boston" type="b2602c69:ProjectViewProjectNode" />
               <item name="East-Boston" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="East-Boston" type="b2602c69:ProjectViewProjectNode" />
-              <item name="East-Boston" type="462c0819:PsiDirectoryNode" />
-              <item name="EastBoston" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -194,12 +226,12 @@
       <workItem from="1517345983349" duration="3892000" />
       <workItem from="1517429509164" duration="14155000" />
       <workItem from="1517694461981" duration="25768000" />
-      <workItem from="1517949872101" duration="37000" />
+      <workItem from="1517949872101" duration="122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65821000" />
+    <option name="totallyTimeSpent" value="65906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="101" width="1429" height="702" extended-state="0" />

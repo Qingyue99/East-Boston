@@ -210,7 +210,6 @@ h6.EastBoston_footer {
     text-transform: none;
     text-align: center;
     letter-spacing: 0;
-    border-top: 1px solid #666;
     padding: 10px;
     /*position: absolute;*/
     /*bottom: 10px;*/
@@ -293,7 +292,7 @@ h6.EastBoston_footer {
 }
 
 img.bostonImg{
-    width:100%;
+    width:80%;
 }
 
 .retail{
@@ -341,7 +340,7 @@ div#infoPanel2{
 div#info{
     position: absolute;
     z-index:100;
-    Top: 120px;
+    Top: 140px;
     left: 20px;
     width: 265px;
     padding:8px 2px 2px 8px;
@@ -394,6 +393,7 @@ div.EastBoston_byline.leafletTitle{
     font-size: 1.8rem;
     line-height: 2.0rem;
     font-family:"BentonSansCond-Bold";
+    text-align:left;
 
 }
 
@@ -428,7 +428,7 @@ div.EastBoston_byline.leafletTitle{
 }
 .label{
     font-family: "BentonSansCond-Bold", "Helvetica-Bold";
-    font-size: 12px;
+    font-size: 16px;
 }
 .icons{
     margin-top:10px;
@@ -446,6 +446,8 @@ div.EastBoston_byline.leafletTitle{
 }
 .footer-div{
     align-content: center;
+    border-top: 1px solid #666;
+
 }
 
 .black{

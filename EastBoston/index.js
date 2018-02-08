@@ -150,8 +150,10 @@ $(document).ready(function() {
 
 
     //barChart
-    var barWidth = document.getElementById('barChart').clientWidth,
-        barHeight = document.getElementById('barChart').clientHeight;
+    // var barWidth = document.getElementById('barChart').clientWidth,
+        // barHeight = document.getElementById('barChart').clientHeight;
+        var barHeight = 400;
+          barWidth = 400;
 
     var barChart = d3.select('#barChart')
         .append('svg')
@@ -201,7 +203,7 @@ $(document).ready(function() {
             .append('text')
             .attr('class', 'label')
             .text(function (d) {
-                return d.factor +' '+ d.percent;
+                return d.factor +' '+ d.percent+ '%';
             })
             .attr("x", 5)
             .attr("y", function (d, i) { return (barH + barS)*i+20; })

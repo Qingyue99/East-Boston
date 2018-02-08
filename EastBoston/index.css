@@ -205,15 +205,16 @@ a:active {
 
 h6.EastBoston_footer {
     font-family: "GrifoL-Bold","Georgia",serif;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #666;
     text-transform: none;
     text-align: center;
     letter-spacing: 0;
     border-top: 1px solid #666;
-    padding: 20px;
-    position: absolute;
-    bottom: 10px;
+    padding: 10px;
+    /*position: absolute;*/
+    /*bottom: 10px;*/
+    margin:auto;
 }
 
 .x-large {
@@ -223,6 +224,18 @@ h6.EastBoston_footer {
     font-style: normal;
     color: #FFFFFF;
 }
+.mediumspecial {
+    font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
+    font-size:2rem;
+    line-height: 2.5rem;
+    color:#080808;
+
+}
+
+
+
+
+
 .medium {
     font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
     font-size:20px;
@@ -237,6 +250,7 @@ h6.EastBoston_footer {
     line-height: 1.5rem;
     font-family:"BentonSansCond-Regular";
     color: #FFFFFF;
+    text-align:left;
 }
 
 .orangeSpan{
@@ -284,6 +298,23 @@ img.bostonImg{
 
 .retail{
     color: #1e7e34;
+    opacity: 0.8;
+}
+
+.shop1{
+    color:#3090A1;
+    opacity: 0.8;
+}
+
+
+
+.retail{
+    color:#3090A1;
+}
+
+
+.streetlight{
+    color:#DE561C;
 }
 
 div#section1{
@@ -299,16 +330,22 @@ div#infoPanel{
     display: block;
 }
 
+div#infoPanel2{
+    font-weight: 200;
+    line-height: 50%;
+    margin: 30px 0px 25px;
+    display: block;
+}
 
 
 div#info{
     position: absolute;
     z-index:100;
-    Top: 150px;
+    Top: 180px;
     left: 20px;
-    width: 250px;
+    width: 265px;
     padding:8px 2px 2px 8px;
-    height:450px;
+    height:620px;
     background-color:#a6b5bd;
     border: 1px solid #cdcdcd;
 }
@@ -350,11 +387,12 @@ div.EastBoston_byline.leafletTitle{
 }
 
 .inner-title3{
-    padding-top: 30px;
+    padding-top:45px;
     padding-bottom: 20px;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2.0rem;
     font-family:"BentonSansCond-Bold";
+
 }
 
 .center-text{
@@ -387,7 +425,7 @@ div.EastBoston_byline.leafletTitle{
     margin: 1px;
 }
 .label{
-    font-family: "BentonSansCond-Bold", "Helvetica-Bold", sans-serif;
+    font-family: "BentonSansCond-Bold", "Helvetica-Bold";
     font-size: 12px;
 }
 .icons{
@@ -397,4 +435,21 @@ div.EastBoston_byline.leafletTitle{
 .leaflet-icon{
     width: 40px;
     height: 40px;
+}
+.leaflet-popup-content-wrapper{
+    background: rgba(255, 255, 255, 0.6);
+}
+.leaflet-popup-content.pop-title{
+    font-size: 20px;
+}
+.footer-div{
+    align-content: center;
+}
+
+.black{
+    font-size:1.2rem;
+    line-height: 1.5rem;
+    font-family:"BentonSansCond-Bold";
+    color:Black;
+    text-align:left;
 }

@@ -450,10 +450,10 @@ div.EastBoston_byline.leafletTitle{
 
 }
 
-.black{
-    font-size:1.2rem;
-    line-height: 1.5rem;
+.small-black{
+    font-size:1rem;
+    line-height: 1.3rem;
     font-family:"BentonSansCond-Bold";
-    color:Black;
+    color:#000000;
     text-align:left;
 }

@@ -226,8 +226,8 @@ h6.EastBoston_footer {
 }
 .mediumspecial {
     font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
-    font-size:2rem;
-    line-height: 2.5rem;
+    font-size:1.8rem;
+    line-height: 2.3rem;
     color:#080808;
 
 }
@@ -384,6 +384,8 @@ div.EastBoston_byline.leafletTitle{
 .inner-title2{
     padding-top: 30px;
     padding-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 2.0rem;
 }
 
 .inner-title3{

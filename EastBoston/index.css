@@ -238,7 +238,7 @@ h6.EastBoston_footer {
 
 .medium {
     font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
-    font-size:20px;
+    font-size:18px;
     line-height: 2rem;
     /*font-size:24px;*/
     /*font-family:sans-serif;*/
@@ -293,7 +293,7 @@ h6.EastBoston_footer {
 }
 
 img.bostonImg{
-    width: 100%;
+    width:100%;
 }
 
 .retail{
@@ -341,11 +341,11 @@ div#infoPanel2{
 div#info{
     position: absolute;
     z-index:100;
-    Top: 180px;
+    Top: 120px;
     left: 20px;
     width: 265px;
     padding:8px 2px 2px 8px;
-    height:620px;
+    height:560px;
     background-color:#a6b5bd;
     border: 1px solid #cdcdcd;
 }

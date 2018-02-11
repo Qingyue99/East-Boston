@@ -18,7 +18,7 @@ $(document).ready(function() {
         controlArrows: true,
         verticalCentered: true,
         sectionsColor :  ['#71C9CE',
-            '#A6E3E9',
+            '#FEFAEC',
             '#C0C0C0',
             '#CBF1F5',
             '#ffffff'],
@@ -30,13 +30,13 @@ $(document).ready(function() {
     var description = [{
         'name':'Eagle Hill',
         'color':'red',
-        'description': '#2 Number of Retail Shop: 26 '+'<br/>'+'#5 Number of Street Light: 79'+'<br/>'+' #3 Average Number of Years Since Building been Remodel: 36'
+        'description': '#2 Number of Retail Shop:'+'<br/>'+'#5 Number of Street Light'+'<br/>'
     }, {
         'name':'Lower Eagle Hill',
-        'description': '#3 Number of Retail Shop: 26 '+'<br/>'+'#5 Number of Street Light: 86'+ '<br/>'+' #3 Average Number of Years Since Building been Remodel: 36'
+        'description': '#3 Number of Retail Shop'+'<br/>'+'#5 Number of Street Light'+ '<br/>'
     }, {
         'name':'Jeffries Point',
-        'description': 'population 3'
+        'description':'#6 Number of Retail Shop'+'<br/>'+'#1 Number of Street Light'+ '<br/>'
     },{
         'name':'Orient Heights',
         'description': 'population 4'
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
     var popup = L.popup()
         .setLatLng([42.367657, -71.034137])
-        .setContent('<p>Welcome to East Boston!<br />Click Each Neighborhood to Explore More</p>')
+        .setContent('Welcome to East Boston!</br>Click Each Neighborhood to Explore More')
         .openOn(map);
 
     // L.tileLayer('https://api.mapbox.com/styles/v1/qqyue/cjcxtlx6k1gx12tmsu69c0yzx/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicXF5dWUiLCJhIjoiY2lpcGJtNG13MDFvNXRya244MGVmNWpseSJ9.Cjq1RBJLYTgEawZX--r_FQ', {
@@ -79,7 +79,7 @@ $(document).ready(function() {
                         text += "<br/><span class='pop-title'>" + feature.properties["Neighbor"] + '</span><br/>' + description[i].description;
                     }
                 }
-                text += "<br>" +  feature.properties["Neighbor"];
+                text += "<br/>";
                 var bindpop = layer.bindPopup(text);
                 layer.setStyle({
                     fillColor: colorNeiborhood(feature.properties["Neighbor"]),

@@ -30,22 +30,22 @@ $(document).ready(function() {
     var description = [{
         'name':'Eagle Hill',
         'color':'red',
-        'description': '#2 Number of Retail Shop:'+'<br/>'+'#5 Number of Street Light'+'<br/>'
+        'description': '#4 Number of Retail Shop:'+'<br/>'+'#5 Number of Street Light'+'<br/>'
     }, {
         'name':'Lower Eagle Hill',
-        'description': '#3 Number of Retail Shop'+'<br/>'+'#5 Number of Street Light'+ '<br/>'
+        'description': '#2 Number of Retail Shop'+'<br/>'+'#1 Number of Street Light'+ '<br/>'
     }, {
         'name':'Jeffries Point',
-        'description':'#6 Number of Retail Shop'+'<br/>'+'#1 Number of Street Light'+ '<br/>'
+        'description':'#5 Number of Retail Shop'+'<br/>'+'#2 Number of Street Light'+ '<br/>'
     },{
         'name':'Orient Heights',
-        'description': 'population 4'
+        'description':'#3 Number of Retail Shop:'+'<br/>'+'#6 Number of Street Light'+'<br/>'
     },{
             'name':'Lower Orient Heights',
-            'description': 'population 5'
+            'description':'#6 Number of Retail Shop:'+'<br/>'+'#4 Number of Street Light'+'<br/>'
         },{
         'name':'Logan',
-        'description': 'population 6'
+        'description': '#1 Number of Retail Shop:'+'<br/>'+'#3 Number of Street Light'+'<br/>'
     }];
     var map = L.map('Map',{
         scrollWheelZoom: false,
